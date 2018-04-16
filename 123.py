@@ -1,3 +1,3 @@
 # coding=utf-8
 
-print u"??"
+print u"中文"
