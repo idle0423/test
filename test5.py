@@ -3,7 +3,7 @@
 File: test5.py
 Project: test
 File Created: Sunday, 15th April 2018 5:12:28 pm
-Author: <<杜沛静>> (<<dupeijing@dfsoft.com.cn>>)
+Author: <<dpj>> (<<idle0423@126.com>>)
 '''
 
 # print "Enter your name:"

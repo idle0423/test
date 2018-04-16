@@ -1,3 +1,3 @@
-"""coding=utf-8"""
+# coding=utf-8
 
-print u"杜沛静"
+print u"中文"

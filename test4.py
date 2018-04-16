@@ -3,7 +3,7 @@
 File: test4.py
 Project: test
 File Created: Sunday, 15th April 2018 9:07:14 am
-Author: <<杜沛静>> (<<dupeijing@dfsoft.com.cn>>)
+Author: <<dpj>> (<<idle0423@126.com>>)
 '''
 a = 24
 b = float(a)
