@@ -3,7 +3,7 @@
 File: test7.py
 Project: test
 File Created: Tuesday, 17th April 2018 10:03:44 pm
-Author: <<杜沛静>> (<<dupeijing@dfsoft.com.cn>>)
+Author: <<dpj>> (<<idle0423@126.com>>)
 '''
 # num1 = float(raw_input("Enter the first number: "))
 # num2 = float(raw_input("Enter the second number: "))
