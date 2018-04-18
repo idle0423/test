@@ -45,10 +45,39 @@ Author: <<dpj>> (<<idle0423@126.com>>)
 # else:
 #     print "Sorry, you can't play the game."
 
-pay = float(raw_input("Enter your pay money: "))
-if pay <= 10:
-    pay = pay * (1 - 0.1)
-    print "sale off 10%,the pay is:"+str(pay)
+# pay = float(raw_input("Enter your pay money: "))
+# if pay <= 10:
+#     pay = pay * (1 - 0.1)
+#     print "sale off 10%,the pay is:"+str(pay)
+# else:
+#     pay = pay * (1 - 0.2)
+#     print "sale off 20%,the pay is:"+str(pay)
+
+# gender = raw_input("Enter your gender: ")
+# if gender == 'f':
+#     age = int(raw_input("Enter your age: "))
+#     if 10 <= age <= 12:
+#         print "You can join in!"
+#     else:
+#         print "You can't join in!"
+# else:
+#     print "You can't join in!"
+
+password = "123a456"
+guess = raw_input("Please Enter the password :")
+if guess == password:
+    print "You're in!"
+    size = int(raw_input("size of tank: "))
+    percent = int(raw_input("percent of full: "))
+    km_per = int(raw_input("km per liter: "))
+    # 距离下一个加油站距离
+    s = 200
+    s1 = (size * percent / 100) * km_per
+    if s1 >= s:
+        print "You can go another " + str(s1) + " km away"
+        print "The next gas station is " + str(s) + " km away"
+        print "You can wait for the next station."
+    else:
+        print "You can't go away!"
 else:
-    pay = pay * (1 - 0.2)
-    print "sale off 20%,the pay is:"+str(pay)
+    print "Your password is not right! You can't play the game!"
