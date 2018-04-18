@@ -26,8 +26,8 @@ Author: <<dpj>> (<<idle0423@126.com>>)
 # else:
 #     print "Yot got less than 3."
 
-age = float(raw_input("Enter your age: "))
-grade = float(raw_input("Enter your grade: "))
+# age = float(raw_input("Enter your age: "))
+# grade = float(raw_input("Enter your grade: "))
 # if age >= 8:
 #     if grade >= 3:
 #         print "Yo can play this game."
@@ -40,7 +40,15 @@ grade = float(raw_input("Enter your grade: "))
 # else:
 #     print "Sorry, you can't play the game."
 
-if not (age < 8):
-    print "You are allowed to play the game."
+# if not (age < 8):
+#     print "You are allowed to play the game."
+# else:
+#     print "Sorry, you can't play the game."
+
+pay = float(raw_input("Enter your pay money: "))
+if pay <= 10:
+    pay = pay * (1 - 0.1)
+    print "sale off 10%,the pay is:"+str(pay)
 else:
-    print "Sorry, you can't play the game."
+    pay = pay * (1 - 0.2)
+    print "sale off 20%,the pay is:"+str(pay)
