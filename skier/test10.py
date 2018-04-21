@@ -64,7 +64,7 @@ def create_map():
     global obstacles
     locations = []
     for i in range(10):
-        print str(i)
+        # print str(i)
         row = random.randint(0, 9)
         col = random.randint(0, 9)
         location = [col * 64 + 20, row * 64 + 20 + 640]

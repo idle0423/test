@@ -9,20 +9,20 @@ import easygui
 # import random
 # user_response = easygui.msgbox("hello")
 # print user_response
-# flavor = easygui.buttonbox("你最喜欢哪种口味的冰激凌？",
-#                            choices=["香草", "巧克力", "草莓"])
-# easygui.msgbox("你选择的口味是：" + flavor)
+flavor = easygui.buttonbox("你最喜欢哪种口味的冰激凌？",
+                           choices=["香草", "巧克力", "草莓"])
+easygui.msgbox("你选择的口味是：" + flavor)
 
-# flavor = easygui.choicebox("你最喜欢哪种口味的冰激凌？",
-#                            choices=["香草", "巧克力", "草莓"])
-# easygui.msgbox(u"你选择的口味是：" + flavor)
+flavor = easygui.choicebox("你最喜欢哪种口味的冰激凌？",
+                           choices=["香草", "巧克力", "草莓"])
+easygui.msgbox(u"你选择的口味是：" + flavor)
 
-# flavor = easygui.enterbox("你最喜欢哪种口味的冰激凌？")
-# easygui.msgbox(u"你输入的口味是：" + flavor)
+flavor = easygui.enterbox("你最喜欢哪种口味的冰激凌？")
+easygui.msgbox(u"你输入的口味是：" + flavor)
 
-# flavor = easygui.enterbox("你最喜欢哪种口味的冰激凌？",
-#                           default="香草")
-# easygui.msgbox(u"你输入的口味是：" + flavor)
+flavor = easygui.enterbox("你最喜欢哪种口味的冰激凌？",
+                          default="香草")
+easygui.msgbox(u"你输入的口味是：" + flavor)
 
 # num = easygui.enterbox("请输入一个数字：")
 # print type(num)
@@ -73,12 +73,12 @@ import easygui
 # Celsius = (Fahrenheit - 32) * 5.0 / 9
 # msg2 = easygui.msgbox("That is " + str(Celsius) + " degrees celius")
 
-name = easygui.enterbox("please enter your name:")
-room = easygui.enterbox("enter your room number:")
-street = easygui.enterbox("enter your street:")
-city = easygui.enterbox("enter your city:")
-state = easygui.enterbox("enter your state:")
-area = easygui.enterbox("enter your area:")
-code = easygui.enterbox("enter your code:")
-whole_addr = name + "\n" + street + "\n" + city + " ," + state + "\n" + code
-msg = easygui.msgbox(whole_addr)
+# name = easygui.enterbox("please enter your name:")
+# room = easygui.enterbox("enter your room number:")
+# street = easygui.enterbox("enter your street:")
+# city = easygui.enterbox("enter your city:")
+# state = easygui.enterbox("enter your state:")
+# area = easygui.enterbox("enter your area:")
+# code = easygui.enterbox("enter your code:")
+# whole_addr = name + "\n" + street + "\n" + city + " ," + state + "\n" + code
+# msg = easygui.msgbox(whole_addr)
