@@ -118,13 +118,13 @@ Author: <<dpj>> (<<idle0423@126.com>>)
 # phoneNumbers["Jonh"] = "555-1234"
 # print phoneNumbers
 
-phoneNumbers = {"John": "555-1234"}
-print phoneNumbers
+# phoneNumbers = {"John": "555-1234"}
+# print phoneNumbers
 
-phoneNumbers["Mary"] = "555-6789"
-phoneNumbers["Bob"] = "444-4321"
-phoneNumbers["Jenny"] = "867-5309"
-print phoneNumbers
+# phoneNumbers["Mary"] = "555-6789"
+# phoneNumbers["Bob"] = "444-4321"
+# phoneNumbers["Jenny"] = "867-5309"
+# print phoneNumbers
 
 # print phoneNumbers["Mary"]
 # print phoneNumbers.keys()
@@ -136,11 +136,11 @@ print phoneNumbers
 # print "aaa"
 
 # 首先取得排序之后的值的列表，然后针对列表中的每个值，循环遍历字典中的所有键，直到找到与该值关联的键，打印出该键以及对应的值
-for value in sorted(phoneNumbers.values()):
-    for key in phoneNumbers.keys():
-        if phoneNumbers[key] == value:
-            print key, phoneNumbers[key]
-            print key, value
+# for value in sorted(phoneNumbers.values()):
+#     for key in phoneNumbers.keys():
+#         if phoneNumbers[key] == value:
+#             print key, phoneNumbers[key]
+#             print key, value
 
 # del phoneNumbers["John"]
 # print phoneNumbers
@@ -148,4 +148,91 @@ for value in sorted(phoneNumbers.values()):
 # phoneNumbers.clear()
 # print phoneNumbers
 
-print "Bob1" in phoneNumbers
+# print "Bob1" in phoneNumbers
+
+# 第1题
+# print "Enter 5 names: "
+# names = []
+# temp = ""
+# for i in range(5):
+#     names.append(raw_input())
+#     temp = temp + " " + names[i]
+# print "The names are" + temp
+
+# 第2题
+# print "Enter 5 names: "
+# names = []
+# temp = ""
+# for i in range(5):
+#     names.append(raw_input())
+#     temp = temp + " " + names[i]
+# print "The names are" + temp
+# print "The sort before:"
+# print names
+
+# print "The sort after:"
+# afterNames = names[:]
+# afterNames.sort()
+# print afterNames
+
+# 第3题
+# print "Enter 5 names: "
+# names = []
+# for i in range(5):
+#     names.append(raw_input())
+
+# print "The third name you entered is: " + names[2]
+
+# 第4题
+# print "Enter 5 names: "
+# names = []
+# temp = ""
+# for i in range(5):
+#     names.append(raw_input())
+#     temp = temp + " " + names[i]
+# print "The names are" + temp
+
+# index = int(raw_input("Replace one name. Whick one? (1-5): "))
+# newname = raw_input("New name: ")
+# names[index - 1] = newname
+# temp = ""
+# for name in names:
+#     temp = temp + " " + name
+# print "The names are" + temp
+
+# 第5题
+# wordDic = {}
+# raw_input("Add or look up a word (a/1)? ")
+# key = raw_input("Type the word: ")
+# value = raw_input("Type the definition: ")
+# wordDic[key] = value
+# print "Word added!"
+
+# raw_input("Add or look up a word (a/1)? ")
+# key = raw_input("Type the word: ")
+# print wordDic[key]
+
+# raw_input("Add or look up a word (a/1)? ")
+# key = raw_input("Type the word: ")
+# if key not in wordDic:
+#     print "That word isn't in the dictionary yet."
+
+wordDic = {}
+while True:
+    command = raw_input("'a' to add word,'1' to look up a word,'q' to quit: ")
+
+    if command == "a":
+        key = raw_input("Type the word: ")
+        value = raw_input("Type the definition: ")
+        wordDic[key] = value
+        print "Word added!"
+
+    elif command == "1":
+        key = raw_input("Type the word: ")
+        if key in wordDic.keys():
+            print wordDic[key]
+        else:
+            print "That word isn't in the dictionary yet."
+
+    elif command == "q":
+        break
